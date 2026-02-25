@@ -1,7 +1,0 @@
-,model,ngram_range,min_df,max_df,max_features,test_accuracy,train_f1,test_f1,comments
-0,LogisticRegression,"(1, 1)",1,1.0,10000,0.9292929292929293,0.9667951933515517,0.9280714817572598,"ngram=(1, 1), min_df=1, max_df=1"
-1,LogisticRegression,"(1, 1)",5,1.0,10000,0.9292929292929293,0.9601258002920364,0.928157072735386,"ngram=(1, 1), min_df=5, max_df=1"
-2,LogisticRegression,"(1, 2)",1,1.0,10000,0.9338310642658468,0.9730946752223348,0.9325574455386452,"ngram=(1, 2), min_df=1, max_df=1"
-3,LogisticRegression,"(1, 2)",5,1.0,10000,0.9330991070121505,0.9703951071254362,0.9317808628153456,"ngram=(1, 2), min_df=5, max_df=1"
-4,LogisticRegression,"(2, 2)",1,1.0,10000,0.8468745425267165,0.9121694646588371,0.8525930101465614,"ngram=(2, 2), min_df=1, max_df=1"
-5,LogisticRegression,"(2, 2)",5,1.0,10000,0.8211096471966037,0.8652536483669214,0.8326944140197152,"ngram=(2, 2), min_df=5, max_df=1"
