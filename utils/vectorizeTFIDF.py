@@ -38,7 +38,7 @@ def run_tfidf_experiment(
     
     row = {
             "model": model.__class__.__name__,
-            "method": 'countVectorizer',
+            "method": 'TFIDF',
             "ngram_range": ngram_range,
             "min_df": min_df,
             "max_df": max_df,
