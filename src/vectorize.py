@@ -18,9 +18,9 @@ def get_vectorize(
             max_df=max_df, 
             max_features=max_features
         )
-        print("I am Vectorizer using Bag of Words")
+        print("CountVectorizer")
     
-    elif method == 'tdidf':
+    elif method == 'tfidf':
 
         vectorizer = TfidfVectorizer(
             ngram_range=ngram_range, 
@@ -28,7 +28,7 @@ def get_vectorize(
             max_df=max_df, 
             max_features=max_features
         )
-        print("I am Vectorizer using TF-IDF")
+        print("TF-IDF Vectorizer")
     
     else:
         raise ValueError("Vectorize method must be 'bow' or 'tfidf'")
@@ -39,10 +39,9 @@ def get_vectorize(
     # Transform test data
     X_test_vec = vectorizer.transform(X_test)
 
-    print("Vectorization completed")
-    print("Train shape:", X_train_vec.shape)
-    print("Test shape :", X_test_vec.shape)
-
     features = vectorizer.get_feature_names_out()
+
+    print("Vectorization completed")
+    print("Total Features:", max_features) 
 
     return vectorizer, features, X_train_vec, X_test_vec
