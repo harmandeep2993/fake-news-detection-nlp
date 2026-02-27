@@ -32,10 +32,8 @@ class TextPreprocessor:
 
         text = text.lower()                                         # Apply lowercase
 
-        # Extract URLs
-        urls = re.findall(r"https?://\S+", text)
+        urls = re.findall(r"https?://\S+", text)                    # Extract URLs
         slug_text = " "
-
         for url in urls:
             slug_text += " " + self.extract_slug(url)
 
